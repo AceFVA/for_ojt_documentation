@@ -78,7 +78,7 @@ const home: Home = {
   subline: (
     <>
       I'm {person.firstName}, a {person.role} at{" "}
-      <Text as="span" size="xl" weight="strong">Commission on Audit</Text>, where I gain valuable skills and <br /> experience being a trainee in a working environment.
+      <Text as="span" size="xl" weight="strong">Commission on Audit</Text>, where I gain valuable skills and experience <br />  being a trainee in a working environment.
     </>
   ),
 };
