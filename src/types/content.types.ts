@@ -142,7 +142,7 @@ export interface About extends BasePageConfig {
     /** Description of the introduction section */
     description: React.ReactNode;
   };
-  /** Work experience section */
+  /** Requirements experience section */
   work: {
     /** Whether to display work experience */
     display: boolean;
@@ -224,10 +224,10 @@ export interface About extends BasePageConfig {
 export interface Blog extends BasePageConfig {}
 
 /**
- * Work/projects page configuration.
- * @description Configuration for the Work/Projects page, including metadata and navigation label.
+ * Requirements/projects page configuration.
+ * @description Configuration for the Requirements/Projects page, including metadata and navigation label.
  */
-export interface Work extends BasePageConfig {}
+export interface Requirements extends BasePageConfig {}
 
 /**
  * Gallery page configuration.
