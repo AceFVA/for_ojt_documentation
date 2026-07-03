@@ -61,7 +61,7 @@ const home: Home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>CMPE 205: On-the-Job Training 1</>,
+  headline: <>CMPE 205: <br /> On-the-Job Training 1</>,
   featured: {
     display: true,
     title: (
