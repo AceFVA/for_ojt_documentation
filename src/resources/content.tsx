@@ -69,7 +69,7 @@ const home: Home = {
         <strong className="ml-4">Once UI</strong>{" "}
         <Line background="brand-alpha-strong" vert height="20" />
         <Text marginRight="4" onBackground="brand-medium">
-          Featured work
+          OJT Requirements
         </Text>
       </Row>
     ),
@@ -231,7 +231,7 @@ const blog: Blog = {
   // All posts will be listed on the /blog route
 };
 
-const work: Requirements = {
+const requirements: Requirements = {
   path: "/requirements",
   label: "Requirements",
   title: `Projects – ${person.name}`,
@@ -291,4 +291,4 @@ const gallery: Gallery = {
   ],
 };
 
-export { person, social, newsletter, home, about, blog, work, gallery };
+export { person, social, newsletter, home, about, blog, requirements, gallery };

@@ -35,9 +35,9 @@ export default function About() {
       items: [],
     },
     {
-      title: about.work.title,
-      display: about.work.display,
-      items: about.work.experiences.map((experience) => experience.company),
+      title: about.requirements.title,
+      display: about.requirements.display,
+      items: about.requirements.experiences.map((experience) => experience.company),
     },
     {
       title: about.studies.title,
@@ -202,13 +202,13 @@ export default function About() {
             </Column>
           )}
 
-          {about.work.display && (
+          {about.requirements.display && (
             <>
-              <Heading as="h2" id={about.work.title} variant="display-strong-s" marginBottom="m">
-                {about.work.title}
+              <Heading as="h2" id={about.requirements.title} variant="display-strong-s" marginBottom="m">
+                {about.requirements.title}
               </Heading>
               <Column fillWidth gap="l" marginBottom="40">
-                {about.work.experiences.map((experience, index) => (
+                {about.requirements.experiences.map((experience, index) => (
                   <Column key={`${experience.company}-${experience.role}-${index}`} fillWidth>
                     <Row fillWidth horizontal="between" vertical="end" marginBottom="4">
                       <Text id={experience.company} variant="heading-strong-l">
