@@ -104,9 +104,7 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        {person.firstName} is a {person.location.split("/")[1]?.replace("_", " ")}-based {person.role.toLowerCase()} with a passion for transforming complex challenges
-        into simple, elegant design solutions. Their work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        A second-year Bachelor of Science in Computer Engineering student at the Polytechnic University of the Philippines. <br /> Section: BSCPE 2 - 6
       </>
     ),
   },
