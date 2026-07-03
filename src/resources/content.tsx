@@ -234,8 +234,8 @@ const blog: Blog = {
 const requirements: Requirements = {
   path: "/requirements",
   label: "Requirements",
-  title: `Projects – ${person.name}`,
-  description: `Design and dev projects by ${person.name}`,
+  title: `OJT Requirements`,
+  description: `Documented requirements for the On-the-Job Training program`,
   // Create new project pages by adding a new .mdx file to app/blog/posts
   // All projects will be listed on the /home and /requirements routes
 };
