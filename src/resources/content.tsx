@@ -108,6 +108,46 @@ const about: About = {
       </>
     ),
   },
+  work: {
+    display: true, // set to false to hide this section
+    title: "Work Experience",
+    experiences: [
+      {
+        company: "Commission on Audit",
+        timeframe: "2026 - Present",
+        role: "Quality Assurance Intern",
+        achievements: [
+          <>
+            N/A
+          </>,
+        ],
+        images: [
+          // optional: leave the array empty if you don't want to display images
+          {
+            src: "/images/projects/project-01/cover-01.jpg",
+            alt: "Once UI Project",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
+        company: "Land Transportation Office",
+        timeframe: "October 2023",
+        role: "Internship Trainee",
+        achievements: [
+          <>
+            Managed our team during our Work Immersion 
+          </>,
+          <>
+            Organizing documents, assisting applicants for Land Transportation Management System (LTMS) Portal 
+Examination required for getting a license. 
+          </>,
+        ],
+        images: [],
+      },
+    ],
+  },
   studies: {
     display: true, // set to false to hide this section
     title: "Studies",
