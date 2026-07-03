@@ -5,7 +5,7 @@ const person: Person = {
   firstName: "Ace Francis",
   lastName: "Agustin",
   name: `Ace Francis V. Agustin`,
-  role: "Student and QA Intern at Commission on Audit",
+  role: "Student and QA Intern",
   avatar: "/images/avatar.jpg",
   email: "acefrancisagustin@gmail.com",
   location: "Asia/Manila", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
@@ -77,8 +77,8 @@ const home: Home = {
   },
   subline: (
     <>
-      I'm {person.firstName}, a {person.role.toLowerCase()} at{" "}
-      <Text as="span" size="xl" weight="strong">ONCE UI</Text>, where I craft intuitive <br /> user experiences. After hours, I build my own projects.
+      I'm {person.firstName}, a {person.role} at{" "}
+      <Text as="span" size="xl" weight="strong">Commission on Audit</Text>, where I gain valuable <br /> experiences.
     </>
   ),
 };
