@@ -108,9 +108,9 @@ const about: About = {
       </>
     ),
   },
-  work: {
+  requirements: {
     display: false, // set to false to hide this section
-    title: "Work Experience",
+    title: "OJT Requirements",
     experiences: [
       {
         company: "Commission on Audit",

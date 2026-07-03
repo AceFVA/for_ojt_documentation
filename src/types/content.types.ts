@@ -143,7 +143,7 @@ export interface About extends BasePageConfig {
     description: React.ReactNode;
   };
   /** Requirements experience section */
-  work: {
+  requirements: {
     /** Whether to display work experience */
     display: boolean;
     /** Title for the work experience section */
