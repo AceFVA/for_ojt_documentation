@@ -105,9 +105,6 @@ export function ShareSection({ title, url }: ShareSectionProps) {
 
   return (
     <Row fillWidth center gap="16" marginTop="32" marginBottom="16">
-      <Text variant="label-default-m" onBackground="neutral-weak">
-        Share this post:
-      </Text>
       <Row data-border="rounded" gap="16" horizontal="center" wrap>
         {enabledPlatforms.map((platform, index) => (
           <Button key={index} variant="secondary" size="s" href={platform.generateUrl(title, url)} prefixIcon={platform.icon} />

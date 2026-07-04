@@ -14,7 +14,7 @@ const person: Person = {
 };
 
 const newsletter: Newsletter = {
-  display: true,
+  display: false,
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: <>My weekly newsletter about creativity and engineering</>,
 };
@@ -225,7 +225,7 @@ Examination required for getting a license.
 const weeklyreport: WeeklyReport = {
   path: "/weeklyreport",
   label: "Weekly Report",
-  title: "Writing about design and tech...",
+  title: "STUDENT’S WEEKLY REPORT ON ACTIVITIES",
   description: `Read what ${person.name} has been up to recently`,
   // Create new weekly report posts by adding a new .mdx file to app/weeklyreport/posts
   // All posts will be listed on the /weeklyreport route
