@@ -1,9 +1,9 @@
 import { getPosts } from "@/utils/utils";
-import { baseURL, blog, person } from "@/resources";
+import { baseURL, weeklyreport, person } from "@/resources";
 import { NextResponse } from "next/server";
 
 export async function GET() {
-  const posts = getPosts(["src", "app", "blog", "posts"]);
+  const posts = getPosts(["src", "app", "weeklyreport", "posts"]);
 
   // Sort posts by date (newest first)
   const sortedPosts = posts.sort((a, b) => {
@@ -14,9 +14,9 @@ export async function GET() {
   const rssXml = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>${blog.title}</title>
+    <title>${weeklyreport.title}</title>
     <link>${baseURL}/weeklyreport</link>
-    <description>${blog.description}</description>
+    <description>${weeklyreport.description}</description>
     <language>${person.locale ?? "en"}</language>
     <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
     <atom:link href="${baseURL}/api/rss" rel="self" type="application/rss+xml" />
@@ -24,7 +24,7 @@ export async function GET() {
     <webMaster>${person.email || "noreply@example.com"} (${person.name})</webMaster>
     <image>
       <url>${baseURL}${person.avatar || "/images/projects/project-01/AGUSTIN_Ace-Francis-V.png"}</url>
-      <title>${blog.title}</title>
+      <title>${weeklyreport.title}</title>
       <link>${baseURL}/weeklyreport</link>
     </image>
     ${sortedPosts

@@ -200,7 +200,7 @@ const sameAs: SameAsConfig = {
   discord: social.find((s) => s.name === "Discord")?.link ?? "",
 };
 
-// social sharing configuration for blog posts
+// social sharing configuration for weekly report posts
 const socialSharing: SocialSharingConfig = {
   display: true,
   platforms: {

@@ -218,10 +218,10 @@ export interface About extends BasePageConfig {
 }
 
 /**
- * Blog page configuration.
- * @description Configuration for the Blog page, including metadata and navigation label.
+ * WeeklyReport page configuration.
+ * @description Configuration for the WeeklyReport page, including metadata and navigation label.
  */
-export interface Blog extends BasePageConfig {}
+export interface WeeklyReport extends BasePageConfig {}
 
 /**
  * Requirements/projects page configuration.

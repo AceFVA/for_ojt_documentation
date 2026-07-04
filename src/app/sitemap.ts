@@ -2,12 +2,12 @@ import { getPosts } from "@/utils/utils";
 import { baseURL, routes as routesConfig } from "@/resources";
 
 export default async function sitemap() {
-  const blogs = getPosts(["src", "app", "blog", "posts"]).map((post) => ({
+  const weeklyreports = getPosts(["src", "app", "weeklyreport", "posts"]).map((post) => ({
     url: `${baseURL}/weeklyreport/${post.slug}`,
     lastModified: post.metadata.publishedAt,
   }));
 
-  const works = getPosts(["src", "app", "requirements", "projects"]).map((post) => ({
+  const requirements = getPosts(["src", "app", "requirements", "projects"]).map((post) => ({
     url: `${baseURL}/requirements/${post.slug}`,
     lastModified: post.metadata.publishedAt,
   }));
@@ -21,5 +21,5 @@ export default async function sitemap() {
     lastModified: new Date().toISOString().split("T")[0],
   }));
 
-  return [...routes, ...blogs, ...works];
+  return [...routes, ...weeklyreports, ...requirements];
 }

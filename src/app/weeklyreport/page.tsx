@@ -1,28 +1,28 @@
 import { Column, Heading, Meta, Schema } from "@once-ui-system/core";
 import { Mailchimp } from "@/components";
 import { Posts } from "@/components/weeklyreport/Posts";
-import { baseURL, blog, person, newsletter } from "@/resources";
+import { baseURL, weeklyreport, person, newsletter } from "@/resources";
 
 export async function generateMetadata() {
   return Meta.generate({
-    title: blog.title,
-    description: blog.description,
+    title: weeklyreport.title,
+    description: weeklyreport.description,
     baseURL: baseURL,
-    image: `/api/og/generate?title=${encodeURIComponent(blog.title)}`,
-    path: blog.path,
+    image: `/api/og/generate?title=${encodeURIComponent(weeklyreport.title)}`,
+    path: weeklyreport.path,
   });
 }
 
-export default function Blog() {
+export default function WeeklyReport() {
   return (
     <Column maxWidth="m" paddingTop="24">
       <Schema
         as="blogPosting"
         baseURL={baseURL}
-        title={blog.title}
-        description={blog.description}
-        path={blog.path}
-        image={`/api/og/generate?title=${encodeURIComponent(blog.title)}`}
+        title={weeklyreport.title}
+        description={weeklyreport.description}
+        path={weeklyreport.path}
+        image={`/api/og/generate?title=${encodeURIComponent(weeklyreport.title)}`}
         author={{
           name: person.name,
           url: `${baseURL}/weeklyreport`,
@@ -30,7 +30,7 @@ export default function Blog() {
         }}
       />
       <Heading marginBottom="l" variant="heading-strong-xl" marginLeft="24">
-        {blog.title}
+        {weeklyreport.title}
       </Heading>
       <Column fillWidth flex={1} gap="40">
         <Posts range={[1, 1]} thumbnail />

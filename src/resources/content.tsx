@@ -1,4 +1,4 @@
-import { About, Blog, Gallery, Home, Newsletter, Person, Social, Requirements } from "@/types";
+import { About, WeeklyReport, Gallery, Home, Newsletter, Person, Social, Requirements } from "@/types";
 import { Line, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
@@ -222,12 +222,12 @@ Examination required for getting a license.
   },
 };
 
-const blog: Blog = {
+const weeklyreport: WeeklyReport = {
   path: "/weeklyreport",
-  label: "Blog",
+  label: "Weekly Report",
   title: "Writing about design and tech...",
   description: `Read what ${person.name} has been up to recently`,
-  // Create new blog posts by adding a new .mdx file to app/weeklyreport/posts
+  // Create new weekly report posts by adding a new .mdx file to app/weeklyreport/posts
   // All posts will be listed on the /weeklyreport route
 };
 
@@ -291,4 +291,4 @@ const gallery: Gallery = {
   ],
 };
 
-export { person, social, newsletter, home, about, blog, requirements, gallery };
+export { person, social, newsletter, home, about, weeklyreport, requirements, gallery };

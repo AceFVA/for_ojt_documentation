@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 
 import { Fade, Flex, Line, Row, ToggleButton } from "@once-ui-system/core";
 
-import { routes, display, person, about, blog, requirements, gallery } from "@/resources";
+import { routes, display, person, about, weeklyreport, requirements, gallery } from "@/resources";
 import { ThemeToggle } from "./ThemeToggle";
 import styles from "./Header.module.scss";
 
@@ -134,7 +134,7 @@ export const Header = () => {
                     <ToggleButton
                       prefixIcon="book"
                       href="/weeklyreport"
-                      label={blog.label}
+                      label={weeklyreport.label}
                       selected={pathname.startsWith("/weeklyreport")}
                     />
                   </Row>
