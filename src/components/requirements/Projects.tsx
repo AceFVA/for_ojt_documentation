@@ -30,6 +30,8 @@ export function Projects({ range, exclude }: ProjectsProps) {
           priority={index < 2}
           key={post.slug}
           href={`/requirements/${post.slug}`}
+          title={post.metadata.title}
+          description={post.metadata.summary}
           images={post.metadata.images}
           content={post.content}
           link={post.metadata.link || ""}

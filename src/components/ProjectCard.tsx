@@ -1,15 +1,13 @@
 "use client";
 
 import {
-  AvatarGroup,
   Carousel,
   Column,
   Flex,
   Heading,
-  SmartLink,
-  Text,
 } from "@once-ui-system/core";
 
+// 1. We removed 'avatars' from the rules here
 interface ProjectCardProps {
   href: string;
   priority?: boolean;
@@ -17,7 +15,6 @@ interface ProjectCardProps {
   title: string;
   content: string;
   description: string;
-  avatars: { src: string }[];
   link: string;
 }
 
@@ -27,8 +24,8 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   title,
   content,
   description,
-  avatars,
   link,
+  // 2. We removed 'avatars' from the props list here
 }) => {
   return (
     <Column fillWidth gap="m">
@@ -53,18 +50,6 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
               {title}
             </Heading>
           </Flex>
-        )}
-        {(avatars?.length > 0 || description?.trim() || content?.trim()) && (
-          <Column flex={7} gap="16">
-            {avatars?.length > 0 && <AvatarGroup avatars={avatars} size="m" reverse />}
-            {description?.trim() && (
-              <Text wrap="balance" variant="body-default-s" onBackground="neutral-weak">
-                {description}
-              </Text>
-            )}
-            <Flex gap="24" wrap>
-            </Flex>
-          </Column>
         )}
       </Flex>
     </Column>
