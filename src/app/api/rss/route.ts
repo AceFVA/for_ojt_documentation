@@ -15,7 +15,7 @@ export async function GET() {
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>${blog.title}</title>
-    <link>${baseURL}/blog</link>
+    <link>${baseURL}/weeklyreport</link>
     <description>${blog.description}</description>
     <language>${person.locale ?? "en"}</language>
     <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
@@ -25,15 +25,15 @@ export async function GET() {
     <image>
       <url>${baseURL}${person.avatar || "/images/projects/project-01/AGUSTIN_Ace-Francis-V.png"}</url>
       <title>${blog.title}</title>
-      <link>${baseURL}/blog</link>
+      <link>${baseURL}/weeklyreport</link>
     </image>
     ${sortedPosts
       .map(
         (post) => `
     <item>
       <title>${post.metadata.title}</title>
-      <link>${baseURL}/blog/${post.slug}</link>
-      <guid>${baseURL}/blog/${post.slug}</guid>
+      <link>${baseURL}/weeklyreport/${post.slug}</link>
+      <guid>${baseURL}/weeklyreport/${post.slug}</guid>
       <pubDate>${new Date(post.metadata.publishedAt).toUTCString()}</pubDate>
       <description><![CDATA[${post.metadata.summary}]]></description>
       ${post.metadata.image ? `<enclosure url="${baseURL}${post.metadata.image}" type="image/jpeg" />` : ""}

@@ -19,8 +19,8 @@ import { formatDate } from "@/utils/formatDate";
 import { getPosts } from "@/utils/utils";
 import { Metadata } from "next";
 import React from "react";
-import { Posts } from "@/components/blog/Posts";
-import { ShareSection } from "@/components/blog/ShareSection";
+import { Posts } from "@/components/weeklyreport/Posts";
+import { ShareSection } from "@/components/weeklyreport/ShareSection";
 
 export async function generateStaticParams(): Promise<{ slug: string }[]> {
   const posts = getPosts(["src", "app", "blog", "posts"]);
@@ -94,7 +94,7 @@ export default async function Blog({ params }: { params: Promise<{ slug: string 
             }}
           />
           <Column maxWidth="s" gap="16" horizontal="center" align="center">
-            <SmartLink href="/blog">
+            <SmartLink href="/weeklyreport">
               <Text variant="label-strong-m">Blog</Text>
             </SmartLink>
             <Text variant="body-default-xs" onBackground="neutral-weak" marginBottom="12">

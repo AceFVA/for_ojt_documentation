@@ -1,6 +1,6 @@
 import { Column, Heading, Meta, Schema } from "@once-ui-system/core";
 import { Mailchimp } from "@/components";
-import { Posts } from "@/components/blog/Posts";
+import { Posts } from "@/components/weeklyreport/Posts";
 import { baseURL, blog, person, newsletter } from "@/resources";
 
 export async function generateMetadata() {
@@ -25,7 +25,7 @@ export default function Blog() {
         image={`/api/og/generate?title=${encodeURIComponent(blog.title)}`}
         author={{
           name: person.name,
-          url: `${baseURL}/blog`,
+          url: `${baseURL}/weeklyreport`,
           image: `${baseURL}${person.avatar}`,
         }}
       />

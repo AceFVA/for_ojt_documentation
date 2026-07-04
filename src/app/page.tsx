@@ -14,7 +14,7 @@ import {
 import { home, about, person, baseURL, routes } from "@/resources";
 import { Mailchimp } from "@/components";
 import { Projects } from "@/components/requirements/Projects";
-import { Posts } from "@/components/blog/Posts";
+import { Posts } from "@/components/weeklyreport/Posts";
 
 export async function generateMetadata() {
   return Meta.generate({
@@ -103,7 +103,7 @@ export default function Home() {
       <RevealFx translateY="16" delay={0.6}>
         <Projects range={[1, 1]} />
       </RevealFx>
-      {routes["/blog"] && (
+      {routes["/weeklyreport"] && (
         <Column fillWidth gap="24" marginBottom="l">
           <Row fillWidth paddingRight="64">
             <Line maxWidth={48} />

@@ -124,7 +124,7 @@ const about: About = {
         images: [
           // optional: leave the array empty if you don't want to display images
           {
-            src: "/images/projects/project-01/cover-01.jpg",
+            src: "/images/projects/project-01/a_agustin_loe.jpg",
             alt: "Once UI Project",
             width: 16,
             height: 9,
@@ -176,13 +176,13 @@ Examination required for getting a license.
         // optional: leave the array empty if you don't want to display images
         images: [
           {
-            src: "/images/projects/project-01/cover-02.jpg",
+            src: "/images/projects/project-01/a_agustin_good_moral.jpg",
             alt: "Project image",
             width: 16,
             height: 9,
           },
           {
-            src: "/images/projects/project-01/cover-03.jpg",
+            src: "/images/projects/project-01/a_agustin_consent.jpg",
             alt: "Project image",
             width: 16,
             height: 9,
@@ -223,12 +223,12 @@ Examination required for getting a license.
 };
 
 const blog: Blog = {
-  path: "/blog",
+  path: "/weeklyreport",
   label: "Blog",
   title: "Writing about design and tech...",
   description: `Read what ${person.name} has been up to recently`,
-  // Create new blog posts by adding a new .mdx file to app/blog/posts
-  // All posts will be listed on the /blog route
+  // Create new blog posts by adding a new .mdx file to app/weeklyreport/posts
+  // All posts will be listed on the /weeklyreport route
 };
 
 const requirements: Requirements = {
@@ -236,7 +236,7 @@ const requirements: Requirements = {
   label: "Requirements",
   title: `OJT Requirements`,
   description: `Documented requirements for the On-the-Job Training program`,
-  // Create new project pages by adding a new .mdx file to app/blog/posts
+  // Create new project pages by adding a new .mdx file to app/weeklyreport/posts
   // All projects will be listed on the /home and /requirements routes
 };
 
