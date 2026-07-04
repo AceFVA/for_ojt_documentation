@@ -1,5 +1,5 @@
 import { Column, Heading, Meta, Schema } from "@once-ui-system/core";
-import { Mailchimp } from "@/components";
+
 import { Posts } from "@/components/weeklyreport/Posts";
 import { baseURL, weeklyreport, person, newsletter } from "@/resources";
 
@@ -35,7 +35,6 @@ export default function WeeklyReport() {
       <Column fillWidth flex={1} gap="40">
         <Posts range={[1, 1]} thumbnail />
         <Posts range={[2, 3]} columns="2" thumbnail direction="column" />
-        <Mailchimp marginBottom="l" />
         <Heading as="h2" variant="heading-strong-xl" marginLeft="l">
           Earlier posts
         </Heading>
