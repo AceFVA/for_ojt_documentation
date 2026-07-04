@@ -1,10 +1,10 @@
-import { About, WeeklyReport, Gallery, Home, Newsletter, Person, Social, Requirements } from "@/types";
+import type { About, WeeklyReport, Gallery, Home, Newsletter, Person, Social, Requirements } from "@/types";
 import { Line, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
   firstName: "Ace Francis",
   lastName: "Agustin",
-  name: `Ace Francis V. Agustin`,
+  name: "Ace Francis V. Agustin",
   role: "Student and QA Intern",
   avatar: "/images/avatar.png",
   email: "acefrancisagustin@gmail.com",
@@ -117,9 +117,7 @@ const about: About = {
         timeframe: "2026 - Present",
         role: "Quality Assurance Intern",
         achievements: [
-          <>
-            N/A
-          </>,
+          "N/A",
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
@@ -136,13 +134,8 @@ const about: About = {
         timeframe: "October 2023",
         role: "Internship Trainee",
         achievements: [
-          <>
-            Managed our team during our Work Immersion 
-          </>,
-          <>
-            Organizing documents, assisting applicants for Land Transportation Management System (LTMS) Portal 
-Examination required for getting a license. 
-          </>,
+          "Managed our team during our Work Immersion",
+          "Organizing documents, assisting applicants for Land Transportation Management System (LTMS) Portal Examination required for getting a license.",
         ],
         images: [],
       },
@@ -226,7 +219,7 @@ const weeklyreport: WeeklyReport = {
   path: "/weeklyreport",
   label: "Weekly Report",
   title: "STUDENT’S WEEKLY REPORT ON ACTIVITIES",
-  description: `Read what ${person.name} has been up to recently`,
+  description: "Read what ${person.name} has been up to recently",
   // Create new weekly report posts by adding a new .mdx file to app/weeklyreport/posts
   // All posts will be listed on the /weeklyreport route
 };
@@ -234,8 +227,8 @@ const weeklyreport: WeeklyReport = {
 const requirements: Requirements = {
   path: "/requirements",
   label: "Requirements",
-  title: `OJT Requirements`,
-  description: `Documented requirements for the On-the-Job Training program`,
+  title: "OJT Requirements",
+  description: "Documented requirements for the On-the-Job Training program",
   // Create new project pages by adding a new .mdx file to app/weeklyreport/posts
   // All projects will be listed on the /home and /requirements routes
 };
