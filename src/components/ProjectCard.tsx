@@ -2,12 +2,11 @@
 
 import {
   Carousel,
-  Column,
   Flex,
   Heading,
+  Text,
 } from "@once-ui-system/core";
 
-// 1. We removed 'avatars' from the rules here
 interface ProjectCardProps {
   href: string;
   priority?: boolean;
@@ -25,33 +24,47 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   content,
   description,
   link,
-  // 2. We removed 'avatars' from the props list here
 }) => {
   return (
-    <Column fillWidth gap="m">
-      <Carousel
-        sizes="(max-width: 960px) 100vw, 960px"
-        items={images.map((image) => ({
-          slide: image,
-          alt: title,
-        }))}
-      />
+    <Flex 
+      fillWidth 
+      gap="32" 
+      align="center" 
+      s={{ direction: "column", gap: "24" }} // Automatically stacks vertically on mobile phones
+    >
+      {/* LEFT SIDE: The Document Image */}
+      <Flex flex={1} fillWidth horizontal="center">
+        <div style={{ maxWidth: "450px", width: "100%" }}>
+          <Carousel
+            sizes="(max-width: 960px) 100vw, 450px"
+            items={images.map((image) => ({
+              slide: image,
+              alt: title,
+            }))}
+          />
+        </div>
+      </Flex>
+      
+      {/* RIGHT SIDE: The Text Details */}
       <Flex
-        s={{ direction: "column" }}
-        fillWidth
+        flex={1}
+        direction="column"
+        gap="12"
         paddingX="s"
-        paddingTop="12"
-        paddingBottom="24"
-        gap="l"
       >
         {title && (
-          <Flex flex={5}>
-            <Heading as="h2" wrap="balance" variant="heading-strong-xl">
-              {title}
-            </Heading>
-          </Flex>
+          <Heading as="h2" wrap="balance" variant="heading-strong-xl">
+            {title}
+          </Heading>
+        )}
+        
+        {/* This will pull the "summary" from your .mdx file */}
+        {description && (
+          <Text onBackground="neutral-weak" variant="body-default-m" wrap="balance">
+            {description}
+          </Text>
         )}
       </Flex>
-    </Column>
+    </Flex>
   );
 };

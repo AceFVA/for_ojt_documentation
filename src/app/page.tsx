@@ -100,9 +100,13 @@ export default function Home() {
           </RevealFx>
         </Column>
       </Column>
+      
+      {/* ALL PROJECTS NOW SHOW HERE AT THE TOP */}
       <RevealFx translateY="16" delay={0.6}>
-        <Projects range={[1, 1]} />
+        <Projects />
       </RevealFx>
+
+      {/* WEEKLY REPORTS NOW SHOW BELOW PROJECTS */}
       {routes["/weeklyreport"] && (
         <Column fillWidth gap="24" marginBottom="l">
           <Row fillWidth paddingRight="64">
@@ -123,7 +127,7 @@ export default function Home() {
           </Row>
         </Column>
       )}
-      <Projects range={[2]} />
+
       <Mailchimp />
     </Column>
   );
