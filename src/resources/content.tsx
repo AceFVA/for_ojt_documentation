@@ -73,7 +73,7 @@ const home: Home = {
         </Text>
       </Row>
     ),
-    href: "/requirements/building-once-ui-a-customizable-design-system",
+    href: "/requirements/for_uploading_documents",
   },
   subline: (
     <>
@@ -227,7 +227,7 @@ const weeklyreport: WeeklyReport = {
 const requirements: Requirements = {
   path: "/requirements",
   label: "Requirements",
-  title: "OJT Requirements",
+  title: "On-the-Job Training 1 Requirements",
   description: "Documented requirements for the On-the-Job Training program",
   // Create new project pages by adding a new .mdx file to app/weeklyreport/posts
   // All projects will be listed on the /home and /requirements routes
