@@ -58,9 +58,14 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
           </Heading>
         )}
         
-        {/* This will pull the "summary" from your .mdx file */}
+{/* This will pull the "summary" from your .mdx file */}
         {description && (
-          <Text onBackground="neutral-weak" variant="body-default-m" wrap="balance">
+          <Text 
+            onBackground="neutral-weak" 
+            variant="body-default-m" 
+            wrap="balance"
+            style={{ whiteSpace: "pre-line" }} 
+          >
             {description}
           </Text>
         )}
