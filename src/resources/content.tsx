@@ -141,13 +141,32 @@ const about: About = {
       },
     ],
   },
-  studies: {
+ company_profile: {
     display: true, // set to false to hide this section
-    title: "Studies",
+    title: "Company Profile",
     institutions: [
       {
-        name: "Polytechnic University of the Philippines",
-        description: <>Currently pursuing a Bachelor of Science in Computer Engineering.</>,
+        name: "Commission on Audit",
+        description: (
+          <>
+            <p><strong>About:</strong> The Commission on Audit (COA) is the country's highest audit body, responsible for ensuring accountability and transparency in government operations.</p>
+            
+            <br/>
+            
+            <h3>Mission</h3>
+            <p>To ensure accountability for public resources, promote transparency, and help improve government operations, in partnership with stakeholders, for the benefit of the Filipino people.</p>
+            
+            <br/>
+            
+            <h3>Vision</h3>
+            <p>A trustworthy, respected and independent audit institution that is an enabling partner of government in ensuring a better life for every Filipino.</p>
+        
+            <br/>
+            
+            <h3>The Quality Assurance and Implementation Services Division</h3>
+            <p>N/A</p>
+          </>
+        ),
       },
     ],
   },

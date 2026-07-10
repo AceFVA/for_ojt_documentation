@@ -111,7 +111,7 @@ export interface Home extends BasePageConfig {
 
 /**
  * About page configuration.
- * @description Configuration for the About page, including sections for table of contents, avatar, calendar, introduction, requirements experience, studies, and technical skills.
+ * @description Configuration for the About page, including sections for table of contents, avatar, calendar, introduction, requirements experience, company_profile, and technical skills.
  */
 export interface About extends BasePageConfig {
   /** Table of contents configuration */
@@ -171,17 +171,17 @@ export interface About extends BasePageConfig {
       }>;
     }>;
   };
-  /** Studies/education section */
-  studies: {
-    /** Whether to display studies section */
+  /** Company Profile/education section */
+  company_profile: {
+    /** Whether to display company_profile section */
     display: boolean;
-    /** Title for the studies section */
+    /** Title for the company_profile section */
     title: string;
     /** List of institutions attended */
     institutions: Array<{
       /** Institution name */
       name: string;
-      /** Description of studies */
+      /** Description of company_profile */
       description: React.ReactNode;
     }>;
   };
