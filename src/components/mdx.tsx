@@ -1,14 +1,14 @@
-import { MDXRemote, MDXRemoteProps } from "next-mdx-remote/rsc";
-import React, { ReactNode } from "react";
+import { MDXRemote } from "next-mdx-remote/rsc";
+import type { MDXRemoteProps } from "next-mdx-remote/rsc";
+import type React from "react";
 import { slugify as transliterate } from "transliteration";
+import type { ReactNode } from "react";
 
 import {
   Heading,
   Text,
   InlineCode,
   CodeBlock,
-  TextProps,
-  MediaProps,
   Accordion,
   AccordionGroup,
   Table,
@@ -25,6 +25,7 @@ import {
   ListItem,
   Line,
 } from "@once-ui-system/core";
+import type { TextProps, MediaProps } from "@once-ui-system/core";
 
 type CustomLinkProps = React.AnchorHTMLAttributes<HTMLAnchorElement> & {
   href: string;
