@@ -152,6 +152,18 @@ const about: About = {
             <p><strong>About:</strong> The Commission on Audit (COA) is the country's highest audit body, responsible for ensuring accountability and transparency in government operations.</p>
             
             <br/>
+
+            <h3>Address</h3>
+            <p>COA Compound, Commonwealth Avenue, Quezon City, Philippines</p>
+
+            <br/>
+
+            <h3>Contact Information</h3>
+            <p>Tel. Nos.: 8931-9207</p>
+            <p>Trunk Line:  8952-5700</p>
+            <p>Website: www.coa.gov.ph</p>
+
+            <br/>
             
             <h3>Mission</h3>
             <p>To ensure accountability for public resources, promote transparency, and help improve government operations, in partnership with stakeholders, for the benefit of the Filipino people.</p>
@@ -162,9 +174,24 @@ const about: About = {
             <p>A trustworthy, respected and independent audit institution that is an enabling partner of government in ensuring a better life for every Filipino.</p>
         
             <br/>
-            
-            <h3>The Quality Assurance and Implementation Services Division</h3>
-            <p>N/A</p>
+
+            <h3>Core Values</h3>
+            <ul>
+              <li><strong>God Centeredness</strong> - We believe that everything comes from God and, therefore, our highest accountability is to Him.</li>
+              <li><strong>Patriotism</strong> - We commit to serve the interest of the Filipino people and the country which shall have priority over all other considerations.</li>
+              <li><strong>Excellence</strong> - We pursue world-class audit services availing of state-of-the-art technology in conformity with international standards and best practices.</li>
+              <li><strong>Integrity</strong> - We discharge our mandate in adherence to moral and ethical principles and the highest degree of honesty, independence, objectivity and professionalism.</li>
+              <li><strong>Professionalism</strong> - We believe in the continuous enhancement of the skills, competence and expertise of our personnel in the basic right of every member of the organization to self-development and well being.</li>
+              <li><strong>Courtesy, Modesty and Humility</strong> - We uphold and practice courtesy, modesty and humility at all times, and acknowledge that we do not have a monopoly of technical expertise.</li>
+              <li><strong>Reverence for Truth and the Rule of Law</strong> We pledge to remain steadfast in our sworn duty to uphold COA’s ideals out of reverence for truth and the rule of law.</li>
+            </ul>
+
+            <br/>
+
+            <h3>Logo</h3>
+
+            <img src="/images/coa_logo.png" alt="COA Logo" width="200" height="200" />
+
           </>
         ),
       },
